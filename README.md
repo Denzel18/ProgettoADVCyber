@@ -1,38 +1,21 @@
 # ProgettoADVCyber
-![]["https://github.com/Denzel18/ProgettoADVCyber/images/logo.png"]
 Progetto relativo al corso di  Advance Cyber Security
-
-
-<div id="top"></div>
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
-
 
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
   <a href="https://github.com/github_username/repo_name">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="images/logo.png" alt="Logo" width="250" height="80">
   </a>
 
-<h3 align="center">project_title</h3>
+<h3 align="center">Progetto di Advance Cyber Security</h3>
 
   <p align="center">
-    project_description
     <br />
-    <a href="https://github.com/Denzel18/ProgettoADVCyber/"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/Denzel18/ProgettoADVCyber/Relazione.pdf"><strong>Explore the docs »</strong></a>
     <br />
-    <br />
-    <a href="https://github.com/Denzel18/ProgettoADVCyber/relazione">Report</a>
   </p>
 </div>
-
-
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -48,14 +31,10 @@ Progetto relativo al corso di  Advance Cyber Security
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="#contributors">Contributors</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
@@ -64,14 +43,13 @@ Progetto relativo al corso di  Advance Cyber Security
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
+In questo elaborato l’attenzione è posta, nello specifico, sui malware che permettono di crea-
+re le Botnet, cioè reti di macchine infette (bot) che poi devono essere coordinate dall’hacker
+tramite un server di comando e controllo. Per contrastare un’infezione di questo tipo, spesso,
+si tenta di individuare ed offuscare il server di comando e controllo; ciò, però, non è così facile
+perché in risposta vengono adottate delle tecniche evasive che ne rendono difficile l’individuazio-
+ne. ***Una di queste tecniche consiste nel cambiare il nome di dominio dopo un certo intervallo di
+tempo, attraverso un DGA (Domain Name Generation Algorithm***
 
 ### Built With
 
@@ -80,129 +58,54 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 * [FastText](https://fasttext.cc/)
 * [DGA MIXED EMBEDDING](https://gitlab.com/christian.morbidoni/dga-mixed-embeddings-ensemble/-/tree/incicco_emanuele)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+1. Downloads Logs GARR: Selezione Logs secondo le specifiche richieste (6 gg al mese, per 12 mesi, per ogni fascia oraria, considerando solo il 10% di ciascun log) 
+2. ETL: Pulizia domini sulla base della lunghezza
+   1. $Lenght > 3$ e $Lenght < 100$
+   2. Regex 
+      ```python 
+      re.match(r'.*\d*\.\d*\.\d*')
+      ```
+3. Divisione in n-grams 
+4. Implementazione FastText e Allenamento FastText 
+5. Script per Bin $\to$ Vec 
+6. Implementazione Architettura Multi Input e Multi Input with Random Embeddings 
+
 
 ### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
+* Per lo sviluppo del progetto è richiesta l'installazione dei pacchetti relativi alla FastText, Keras, TensorFlow (per l'architettura), nlkt per la suddivisione in n_grams. Il tutto è possbile tramite il commando (il paramentro -q è relativo a ***quiet***):
+  ```python
+  pip install <name-package> -q 
   ```
 
-### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/github_username/repo_name.git
+* Per motivi si sicurezza non riportiamo informazioni relative al riperimento del dataset GARR. Possiamo solo dire che in quel caso è stato utilizzato il commando: 
+  ```sh
+   scp -P XXXXX studenti@XXX.XXX.XXX.XXX:/home/.../pdns_XXXX_XX_XX_XX.log.xz  /Users/name_users/Desktop
    ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
 
 <!-- USAGE EXAMPLES -->
 ## Usage
+Una volta scaricati i vari logs e fatto il clone del repository [DGA MIXED EMBEDDING](https://gitlab.com/christian.morbidoni/dga-mixed-embeddings-ensemble/-/tree/incicco_emanuele), sarà sufficiente eseguire lo [script](https://github.com/Denzel18/ProgettoADVCyber/Script_ADV_CYBER_NEW.ipynb)
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
-
-See the [open issues](https://github.com/Denzel18/ProgettoADVCyber/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-<p align="right">(<a href="#top">back to top</a>)</p>
+Per ulteriori dettagli, rifarsi alla [Documentazione](https://github.com/Denzel18/ProgettoADVCyber/Relazione.pdf)
 
 
 
 <!-- LICENSE -->
 ## License
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
+Distributed under the MIT License. 
 
 <!-- CONTACT -->
-## Contact
+## Contributors  
+Emanuele Incicco, Federico Miscia, Lorenzo Fratini, Andrea Pinciaroli, Denis Bernovschi
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
-
-Project Link: [https://github.com/github_username/repo_name](https://github.com/Denzel18/ProgettoADVCyber/)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
+Project Link: [https://github.com/Denzel18/ProgettoADVCyber](https://github.com/Denzel18/ProgettoADVCyber/)
 
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
+Progetto Sviluppato nel Corso di Advanced Cyber Security tenuto all'Università Politecnica delle Marche 
 
-* []()
-* []()
-* []()
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-https://github.com/Denzel18/ProgettoADVCyber/
-[contributors-shield]: https://img.shields.io/github/contributors/Denzel18/ProgettoADVCyber.svg?style=for-the-badge
-[contributors-url]: https://github.com/Denzel18/ProgettoADVCyber/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/Denzel18/ProgettoADVCyber.svg?style=for-the-badge
-[forks-url]: https://github.com/Denzel18/ProgettoADVCyber/network/members
-[stars-shield]: https://img.shields.io/github/stars/Denzel18/ProgettoADVCyber.svg?style=for-the-badge
-[stars-url]: https://github.com/Denzel18/repo_name/stargazers
-[issues-shield]: https://img.shields.io/github/issues/Denzel18/ProgettoADVCyber.svg?style=for-the-badge
-[issues-url]: https://github.com/Denzel18/repo_name/issues
-[license-shield]: https://img.shields.io/github/license/Denzel18/ProgettoADVCyber.svg?style=for-the-badge
-[license-url]: https://github.com/Denzel18/repo_name/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/linkedin_username
-[product-screenshot]: images/screenshot.png
