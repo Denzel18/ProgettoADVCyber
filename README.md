@@ -12,7 +12,7 @@ Progetto relativo al corso di  Advance Cyber Security
 
   <p align="center">
     <br />
-    <a href="https://github.com/Denzel18/ProgettoADVCyber/Relazione.pdf"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/Denzel18/ProgettoADVCyber/blob/main/Relazione.pdf"><strong>Explore the docs »</strong></a>
     <br />
   </p>
 </div>
@@ -90,7 +90,7 @@ tempo, attraverso un DGA (Domain Name Generation Algorithm***
 ## Usage
 Una volta scaricati i vari logs e fatto il clone del repository [DGA MIXED EMBEDDING](https://gitlab.com/christian.morbidoni/dga-mixed-embeddings-ensemble/-/tree/incicco_emanuele), sarà sufficiente eseguire lo [script](https://github.com/Denzel18/ProgettoADVCyber/Script_ADV_CYBER_NEW.ipynb)
 
-Per ulteriori dettagli, rifarsi alla [Documentazione](https://github.com/Denzel18/ProgettoADVCyber/Relazione.pdf)
+Per ulteriori dettagli, rifarsi alla [Documentazione](https://github.com/Denzel18/ProgettoADVCyber/blob/main/Relazione.pdf)
 
 
 
