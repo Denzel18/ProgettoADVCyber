@@ -49,7 +49,7 @@ tramite un server di comando e controllo. Per contrastare un’infezione di ques
 si tenta di individuare ed offuscare il server di comando e controllo; ciò, però, non è così facile
 perché in risposta vengono adottate delle tecniche evasive che ne rendono difficile l’individuazio-
 ne. ***Una di queste tecniche consiste nel cambiare il nome di dominio dopo un certo intervallo di
-tempo, attraverso un DGA (Domain Name Generation Algorithm***
+tempo, attraverso un DGA (Domain Name Generation Algorithm)***
 
 ### Built With
 
