@@ -12,8 +12,11 @@ Progetto relativo al corso di  Advance Cyber Security
 
   <p align="center">
     <br />
-    <a href="https://github.com/Denzel18/ProgettoADVCyber/blob/main/Relazione.pdf"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/Denzel18/ProgettoADVCyber/blob/main/Relazione.pdf"><strong>Explore the docs</strong></a>
     <br />
+    <a href="https://github.com/Denzel18/ProgettoADVCyber/tree/main/reports"><strong>Reports</strong></a>
+    <br />
+    <a href="https://drive.google.com/file/d/1munRaZZUbyJac8nlXsgYyqzi4_42OOQU/view?usp=sharing"><strong>Domains Extracted</strong></a>
   </p>
 </div>
 
