@@ -46,12 +46,7 @@ Progetto relativo al corso di  Advance Cyber Security
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-In questo elaborato l’attenzione è posta, nello specifico, sui malware che permettono di crea-
-re le Botnet, cioè reti di macchine infette (bot) che poi devono essere coordinate dall’hacker
-tramite un server di comando e controllo. Per contrastare un’infezione di questo tipo, spesso,
-si tenta di individuare ed offuscare il server di comando e controllo; ciò, però, non è così facile
-perché in risposta vengono adottate delle tecniche evasive che ne rendono difficile l’individuazio-
-ne. ***Una di queste tecniche consiste nel cambiare il nome di dominio dopo un certo intervallo di
+In questo elaborato l’attenzione è posta, nello specifico, sui malware che permettono di creare le Botnet, cioè reti di macchine infette (bot) che poi devono essere coordinate dall’hacker tramite un server di comando e controllo. Per contrastare un’infezione di questo tipo, spesso, si tenta di individuare ed offuscare il server di comando e controllo; ciò, però, non è così facile perché in risposta vengono adottate delle tecniche evasive che ne rendono difficile l’individuazione. ***Una di queste tecniche consiste nel cambiare il nome di dominio dopo un certo intervallo di
 tempo, attraverso un DGA (Domain Name Generation Algorithm)***
 
 ### Built With
